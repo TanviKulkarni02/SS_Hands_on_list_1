@@ -1,0 +1,440 @@
+    1  touch abc.txt
+    2  cd /
+    3  cd desktop
+    4  Documents/
+    5  '/home/tanvikulkarni/Documents/ft/abc.txt' 
+    6  ls -l
+    7  ls -al
+    8  ls -alh
+    9  man cat
+   10  .
+   11  ..
+   12  ls
+   13  cd Documents/
+   14  /
+   15  mkdir ram
+   16  ls -l
+   17  ls -lc
+   18  file abc
+   19  file abc.txt
+   20  /
+   21  cd desktop
+   22  clear
+   23  cd desktop
+   24  cd Desktop
+   25  cd Home
+   26  clear
+   27  touch ram.txt
+   28  mkdir ram.txt
+   29  ls
+   30  man rm
+   31  rm abc.txt
+   32  cd dir
+   33  '/home/tanvikulkarni/Desktop/dir' 
+   34  /home
+   35  cd /home
+   36  cd /Documents
+   37  cd /Desktop
+   38  ls
+   39  tanvikulkarni/
+   40  ls
+   41  rm abc.txt
+   42  cd clear
+   43  clear
+   44  /
+   45  ..
+   46  .
+   47  clear
+   48  cd /
+   49  ls
+   50  cd dir
+   51  touch abc.txt
+   52  man rm
+   53  rm abc.txt
+   54  ..
+   55  cd ..
+   56  mkdir -p/a/b/c
+   57  mkdir -p a/b/c
+   58  cd a
+   59  ls
+   60  cd b
+   61  ls
+   62  cd ..
+   63  cd..
+   64  cd ..
+   65  cd ~
+   66  ls
+   67  mkdir hello
+   68  ls
+   69  rm -d hello
+   70  ls
+   71  mkdir hello
+   72  touch hello/text.txt
+   73  ls
+   74  rm -r hello/
+   75  ls
+   76  rm -r a
+   77  cd Desktop/
+   78  rm -r a
+   79  cd ..
+   80  cd Pictures
+   81  lss
+   82  ls
+   83  touch myphotos.png
+   84  ls
+   85  mkdir nature
+   86  cd nature/
+   87  mkdir plants
+   88  cd plants/
+   89  touch 1.png
+   90  ls
+   91  touch 2.png
+   92  ls
+   93  cp 1.png 2.png cp../../
+   94  cd..
+   95  cd ..
+   96  mkdir action
+   97  ls
+   98  cd nature
+   99  cd plants
+  100  ls
+  101  cp 1.png 2.png ../../action
+  102  cd ../../
+  103  ls
+  104  cat action
+  105  cd action
+  106  ls
+  107  touch another.png
+  108  ls
+  109  mv another.png ../action/another 2002
+  110  mv another.png ../action/another_2002
+  111  cd ..
+  112  mv another.png ../nature/another_2002
+  113  cd action
+  114  mv another.png ../nature/another_2004
+  115  ls
+  116  cat >> foods.txt
+  117  less foods.txt
+  118  cd ..
+  119  man cat
+  120  ls
+  121  nano a.txt
+  122  ls
+  123  nano b.txt
+  124  ls
+  125  cat a.txt b.txt
+  126  cat a.txt b.txt > c.txt
+  127  cat c.txt
+  128  cat a.txt > c.txt
+  129  cat c.txt
+  130  cat b.txt >> c.txt
+  131  cat c.txt
+  132  cat > a.txt
+  133  cat a.txt
+  134  /
+  135  touch foods.txt
+  136  ls
+  137  head foods.txt
+  138  tail foods.txt
+  139  head -n 1 foods.txt
+  140  tail -n 4 foods.txt
+  141  tail -f foods.txt
+  142  less foods.txt
+  143  ls
+  144  cat foods.txt
+  145  less foods.txt
+  146  cat foods.txt
+  147  cd..
+  148  cd ..
+  149  cat foods.txt
+  150  sort foods.txt
+  151  sort -r foods.txt
+  152  rev foods.txt
+  153  ls -lh
+  154  ls -lh > files.txt
+  155  head -5 files.txt
+  156  sort -k5h files.txt
+  157  cat foods.txt | grep kiwi
+  158  ls -lh | grep pictures
+  159  ls -lh | grep "pictures"
+  160  echo 2+3
+  161  echo $(2+3)
+  162  echo $((2+3))
+  163  echo $((3*4))
+  164  find type -d
+  165  find -type d
+  166  find -type f
+  167  find/home -size -50K
+  168  find-size -50k 
+  169  find -size -50k
+  170  cd..
+  171  cd ..
+  172  ls
+  173  chmod  u+x Public
+  174  ls -l
+  175  chmod u-x Pictures
+  176  ls -l
+  177  chmod o=x Videos
+  178  ls -l
+  179  chmod g=r Desktop
+  180  ls -l
+  181  cd ..
+  182  cd /
+  183  ls
+  184  pwd
+  185  cd home
+  186  ls
+  187  cd tanvikulkarni/
+  188  ls
+  189  touch ss.txt
+  190  rem ss.txt
+  191  rm ss.txt
+  192  mkdir ss
+  193  cd ss
+  194  nano ss
+  195  cc ss
+  196  sudo apt install gcc
+  197  cc ss
+  198  gcc ss
+  199  nano ss
+  200  gcc ss
+  201  gcc ss.c
+  202  htop
+  203  sudo snap install htop
+  204  htop
+  205  ps 
+  206  ps -e
+  207  ps -e ppid
+  208  ps
+  209  gcc ss.c
+  210  htop
+  211  nano ss.c
+  212  gcc prog2.c
+  213  htop
+  214  cd ..
+  215  ls
+  216  cd home
+  217  pwd
+  218  cd ss
+  219  ls
+  220  mv prog2.c 2.c
+  221  ls
+  222  nano 2.c
+  223  cc 2.c
+  224  ./a.out &
+  225  cd /
+  226  cd proc
+  227  cat 2889
+  228  cd 2889
+  229  cat
+  230  cat status
+  231  cat 2889 
+  232  ls
+  233  cat syscall
+  234  sudo syscall
+  235  sudo cat syscall
+  236  htop
+  237  cat cpuset
+  238  cat comm
+  239  cat cgroup
+  240  cd ~
+  241  cd ss
+  242  ls
+  243  cat ss
+  244  cat ss.c
+  245  rm ss
+  246  rm ss.c
+  247  cat 2.c
+  248  cat ss.c
+  249  ls
+  250  touch 1.c
+  251  nano 1.c
+  252  touch fruits
+  253  nano 1.c
+  254  cc 1.c
+  255  ./a.out 
+  256  ls
+  257  ll
+  258  touch 1.b
+  259  nano 1.b
+  260  cc 1.b
+  261  nano 1.b
+  262  ./a.out
+  263  ls
+  264  cd 1.b
+  265  mv 1.c 1a.c
+  266  mv 1.b 1b.c
+  267  ls
+  268  nano 1b.c
+  269  cc 1b.c
+  270  ./a.out
+  271  ls
+  272  ll
+  273  ln fruits hardlink2
+  274  ll
+  275  rm hardlink2
+  276  ll
+  277  nano fruits
+  278  history
+  279  history | cat > history1
+  280  cat history
+  281  ls history
+  282  cat history1
+  283  pwd
+  284  ~
+  285  cd ~
+  286  cd ss
+  287  touch 3.c
+  288  nano 3.c
+  289  cc 3.c
+  290  ./a.out
+  291  nano 3.c
+  292  cc 3.c
+  293  ./a.out
+  294  nano 3.c
+  295  touch 4.c
+  296  nano 4.c
+  297  history1
+  298  history
+  299  nano 4.c
+  300  ./a.out
+  301  cc 4.c
+  302  nano 4.c
+  303  cc 4.c
+  304  nano 4.c
+  305  man open
+  306  man 2 open
+  307  cc 4.c
+  308  ./a.out
+  309  nano 4.c
+  310  cat 3.c
+  311  man open
+  312  man 2 open
+  313  man 2 excl
+  314  man EXCL
+  315  man 2 EXCL
+  316  nano 4.c
+  317  cc 4.c
+  318  ./a.out
+  319  nano 4.c
+  320  cc 4.c
+  321  ./a.out
+  322  nano 4.c
+  323  cc 4.c
+  324  ./a.out
+  325  cat 4.c
+  326  nano 4.c
+  327  cc 4.c
+  328  ./a.out
+  329  nano 4.c
+  330  cc 4.c
+  331  ./a.out
+  332  nano 4.c
+  333  cc 4.c
+  334  ./a.out
+  335  ls
+  336  cat car
+  337  sudo cat car
+  338  rm car
+  339  nano 4.c
+  340  cc 4.c
+  341  ./a.out
+  342  nano 4.c
+  343  cc 4.c
+  344  nano 4.c
+  345  cc 4.c
+  346  ./a.out
+  347  nano 4.c
+  348  cc 4.c
+  349  ./a.out
+  350  nano 4.c
+  351  cc 4.c
+  352  ./a.out
+  353  nano 4.c
+  354  cc 4.c
+  355  nano 4.c
+  356  cc 4.c
+  357  ./a.out
+  358  nano 4.c
+  359  man 2 read
+  360  history | cat history1
+  361  cat history1
+  362  history1
+  363  history
+  364  history | cat > history1
+  365  cat history1
+  366  ~
+  367  cd ..
+  368  ~
+  369  ls
+  370  cd ss
+  371  ls
+  372  touch 6.c
+  373  nano 6.c
+  374  cc 6.c
+  375  nano 6.c
+  376  cc 6.c
+  377  nano 6.c
+  378  cc 6.c
+  379  nano 6.c
+  380  cc 6.c
+  381  nano 6.c
+  382  cc 6.c
+  383  nano 6.c
+  384  cc 6.c
+  385  nano 6.c
+  386  cc 6.c
+  387  nano 6.c
+  388  cc 6.c
+  389  ./a.out
+  390  clear
+  391  cc 6.c
+  392  ./a.out
+  393  history
+  394  history | cd > history1
+  395  cd history1
+  396  history | cat > history1
+  397  cd history1
+  398  history1
+  399  cat history1
+  400  cd ss
+  401  ls
+  402  touch 7.c
+  403  nano 7.c
+  404  rm 7.c
+  405  ls
+  406  touch 7.sh
+  407  nano 7.sh
+  408  cat > txt1
+  409  nano 7.sh
+  410  cc 7.sh
+  411  sh 7.sh
+  412  .a/out
+  413  ./a.out
+  414  sh 7.sh
+  415  cat txt2
+  416  nano 7.sh
+  417  rm txt1
+  418  cat > text1
+  419  sh 7.sh
+  420  cat text2
+  421  nano 7.sh
+  422  touch 8.c
+  423  touch 9.c
+  424  nano 9.c
+  425  cat val
+  426  cc 9.c
+  427  nano 9.c
+  428  cc 9.c
+  429  ./a.out
+  430  cat 9.c
+  431  nano 9.c
+  432  rem 9.c
+  433  rm 9.c
+  434  touch 9.sh
+  435  nano 9.sh
+  436  cat status
+  437  sh 9.sh
+  438  clear
+  439  sh 9.sh
+  440  history | cat > history1
