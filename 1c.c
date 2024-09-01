@@ -11,18 +11,20 @@ Date: 30th Aug, 2024.
 
 
 
-#include <stdio.h>
-#include <fcntl.h>
+#include <sys/stat.h>
+#include<stdio.h>
 #include <unistd.h>
 
-int main(void)
+int main(){
+
+char *path="FIFOfile";
+
+if((mknod(path,0744,0)==-1))
 {
 
-int fd;
-char buff[100];
-fd= open("myfifo", O_WRONLY);
-printf("Enter : ");
-scanf( "%[^\n]",buff);
-write(fd, buff, sizeof(buff));
+perror("error");
+}
+
+printf("success");
 
 }
