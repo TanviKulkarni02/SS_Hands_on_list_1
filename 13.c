@@ -22,7 +22,7 @@ int retval;
 FD_ZERO(&fds1);
 FD_SET(0,&fds1);
 
-tv.tv_sec=5;
+tv.tv_sec=10;
 tv.tv_usec=0;
 retval = select(1,&fds1,NULL,NULL,&tv);
 

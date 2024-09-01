@@ -20,7 +20,7 @@ int main(void){
 int fd;
 fd = open( "file1" , O_CREAT | O_RDWR,0744);
 write (fd, "hi everybody" , 12);
-lseek(fd,10L,SEEK_SET);
+lseek(fd,10L,SEEK_CUR);
 write( fd , "I am Tanvi Kulkarni",19);
 close(fd);
 }
