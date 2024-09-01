@@ -17,6 +17,6 @@ int main(void)
 {
 
          execl("/bin/ls", "ls" , "-l" , "-a" , "-F" , NULL);
-
+printf("hi");
 return 0;
 }

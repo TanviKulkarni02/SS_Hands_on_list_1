@@ -14,19 +14,65 @@ Date: 30th Aug, 2024.
 
 
 
-#include <stdio.h>
-#include <sched.h>
+#include<unistd.h>
+#include<stdio.h>
+#include<sched.h>
 
-int main()
+int main(){
+int choice,newpolicy;
+int policy=sched_getscheduler(0);
+struct sched_param s;
+
+switch(policy)
 {
+	case SCHED_FIFO:
+		printf("scheduling policy - FIFO\n");
+		break;
+	case SCHED_RR:
+		printf("scheduling policy - Round Robin\n");
+		break;
+	case SCHED_OTHER:
+		printf("scheduling policy - Other\n");
+		break;
+	default:
+		break;
+}
 
-pid_t pid = getpid();
-printf("The scheduling policy is : %d \n", sched_getscheduler(pid));
+printf("choose scheduling policy :\n1.Round Robin\n2.FIFO\n3.Other\n");
+printf("enter number :");
+scanf("%d",&choice);
+switch(choice)
+{	case 1:
+		s.sched_priority=1;
+		sched_setscheduler(0,SCHED_RR,&s);
+		break;
+	case 2:
+		 s.sched_priority=1;
+                 sched_setscheduler(0,SCHED_FIFO,&s);
+		 break;
 
-printf("The scheduling policy is : %d \n", sched_setscheduler(pid));
+	case 3:
+		 s.sched_priority=0;
+                sched_setscheduler(0,SCHED_OTHER,&s);
+		break;
+	default:
+		printf("wrong choice\n");break;
 
-printf("The modified scheduling policy now is : %d  \n" , sched_setscheduler(pid_t getpid()));
+}		
 
-return 0;
-
+ newpolicy=sched_getscheduler(0);
+switch(newpolicy)
+{
+        case SCHED_FIFO:
+                printf("scheduling policy - FIFO\n");
+                break;
+        case SCHED_RR:
+                printf("scheduling policy - Round Robin\n");
+                break;
+        case SCHED_OTHER:
+                printf("scheduling policy - Other\n");
+                break;
+        default:
+                break;
+}
 }
